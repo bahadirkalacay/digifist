@@ -1,0 +1,18 @@
+.App {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.imagePage {
+  width: 50%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.productPage {
+  width: 50%;
+}
+
+@media only screen and (max-width: 840px) {
+ 
+  }

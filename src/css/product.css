@@ -1,0 +1,294 @@
+.productPage {
+  position: absolute;
+  margin-left: 50%;
+}
+h4 {
+  width: 494px;
+  height: 123px;
+  margin-left: 120px;
+  top: 96px;
+  font-family: "ITC Avant Garde Gothic Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 130%;
+  display: flex;
+  align-items: flex-end;
+  color: #000000;
+}
+p {
+  width: 432px;
+  height: 52px;
+  margin-left: 120px;
+  top: 231px;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #666666;
+}
+a {
+  width: 146px;
+  height: 17px;
+  top: 315px;
+  margin-left: 120px;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12.8px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.carousel {
+  width: 906px;
+  height: 368px;
+  max-width: 720px;
+  overflow: hidden;
+  position: relative;
+  top: 68px;
+  /*   border: 1px solid; */
+}
+
+.carousel-reverse {
+  flex-direction: row-reverse;
+}
+
+.colors {
+  display: flex;
+  flex-direction: row;
+}
+
+.carousel .carousel-item,
+.carousel .carousel-item--hidden {
+  display: none;
+}
+
+.carousel .carousel-item--visible {
+  display: block;
+}
+
+.carousel-item {
+  width: 200px;
+}
+
+.carousel-item img {
+  height: 310px;
+  width: 100%;
+  max-width: 230px;
+}
+
+.carousel .carousel-button {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.carousel .carousel-button button {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.carousel .carousel-button button#carousel-button--next {
+  margin-left: 85%;
+  width: 40px;
+  height: 40px;
+}
+
+.left-slide {
+  position: absolute;
+  margin-left: 120px;
+}
+
+.right-slide {
+  position: absolute;
+  margin-left: 382px;
+}
+
+.right-fake-slide {
+  position: absolute;
+  right: -120px;
+}
+
+.left-fake-slide {
+  position: absolute;
+  left: -200px;
+}
+.caption-text {
+  width: 230px;
+  height: 20px;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 160%;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 12px;
+}
+
+.colorProduct1 {
+  width: 12px;
+  height: 12px;
+  background-color: #c4c4c4;
+  border: 1.5px solid #ffffff;
+  border-radius: 50%;
+  margin-left: 70px;
+  margin-top: 2px;
+}
+.colorProduct2 {
+  width: 12px;
+  height: 12px;
+  background-color: #cc9999;
+  border: 1.5px solid #ffffff;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-top: 2px;
+}
+.colorProduct3 {
+  width: 12px;
+  height: 12px;
+  background-color: #cb99cc;
+  border: 1.5px solid #ffffff;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-top: 2px;
+}
+.colorProduct4 {
+  width: 12px;
+  height: 12px;
+  background-color: #a6cc99;
+  border: 1.5px solid #ffffff;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-top: 2px;
+}
+
+.caption-detail {
+  width: 230px;
+  height: 20px;
+  display: flex;
+  margin-top: 4px;
+}
+
+@media only screen and (max-width: 840px) {
+  .productPage {
+    margin-left: 0;
+    width: 100%;
+  }
+  h4 {
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 248px;
+    font-family: "ITC Avant Garde Gothic Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #ffffff;
+  }
+  p {
+    display: none;
+  }
+  a {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 16px;
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12.8px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .carousel {
+    width: 900px;
+    max-width: 100%;
+  }
+  .left-slide {
+    margin-left: 5%;
+  }
+  .right-slide {
+    margin-left: 45%;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .carousel {
+    max-width: 100%;
+    height: 363px;
+  }
+
+  .carousel-item img {
+    height: 200px;
+    width: 148px;
+  }
+  .caption-text {
+    width: 149px;
+    height: 40px;
+    font-size: 12.8px;
+  }
+  .caption-detail {
+    width: 149px;
+    height: 40px;
+    display: block;
+    font-size: 12.8px;
+  }
+  .colorProduct1 {
+    margin-left: 0;
+  }
+
+  .right-slide {
+    margin-left: 43%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .carousel {
+    width: 100%;
+    top: 48px;
+  }
+  .carousel-item img {
+    height: 180px;
+    width: 120px;
+  }
+  .caption-text {
+    width: 110px;
+    font-size: 12.8px;
+  }
+  .caption-detail {
+    font-size: 12.8px;
+  }
+  .right-slide {
+    margin-left: 42%;
+  }
+  h4 {
+    margin-top: 200px;
+  }
+
+  a {
+    margin-top: 12px;
+  }
+}
